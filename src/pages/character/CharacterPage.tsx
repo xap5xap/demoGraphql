@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getCharacterById } from "../../apollo/queries";
 import CharacterHero from "../../components/characterHero/CharacterHero";
+import EpisodeCard from "../../components/episodeCard/EpisodeCard";
 import { GetCharacterByIdResponse } from "../../types/rickAndMortiTypes";
 
 type PageParams = {
@@ -19,6 +20,12 @@ const CharacterPage: FC = () => {
       },
     }
   );
+
+  const renderEpisodes = () => {
+    return data?.character.episode?.map((el) => (
+      <EpisodeCard key={el.id} episode={el}></EpisodeCard>
+    ));
+  };
 
   if (loading) {
     return <div className="flex flex-col items-center ">Loading...</div>;
@@ -39,6 +46,12 @@ const CharacterPage: FC = () => {
   return (
     <div>
       <CharacterHero character={data.character}></CharacterHero>
+      <div className="flex flex-col p-4">
+        <div className="text-4xl mb-4">Episodes:</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {renderEpisodes()}
+        </div>
+      </div>
     </div>
   );
 };

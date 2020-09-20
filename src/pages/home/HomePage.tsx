@@ -28,7 +28,9 @@ const Home = () => {
         <h1 className="text-2xl text-blue-700 leading-tight">
           Tailwind and Create React App
         </h1>
-        <div>{renderCharacters()}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {renderCharacters()}
+        </div>
       </div>
     </div>
   );

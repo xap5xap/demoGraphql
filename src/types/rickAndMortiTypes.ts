@@ -7,6 +7,14 @@ export type Character = {
   gender: string;
   image: string;
   created?: string;
+  episode?: Episode[];
+};
+
+export type Episode = {
+  id: string;
+  name: string;
+  episode: string;
+  air_date: string;
 };
 
 export type GetCharactersResponse = {
