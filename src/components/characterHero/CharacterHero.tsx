@@ -12,6 +12,7 @@ const CharacterHero: FC<Props> = ({ character }) => {
       <div className="flex flex-col items-center">
         <h2 className="text-6xl">{character.name}</h2>
         <img
+          data-testid="image"
           src={character.image}
           alt={character.name}
           className={styles.image}

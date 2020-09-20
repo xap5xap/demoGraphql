@@ -6,7 +6,7 @@ import Home from "./pages/home/HomePage";
 
 function App() {
   return (
-    <div className="bg-gray-200 max-h-screen h-screen">
+    <div className="bg-orange-100 h-screen h-full">
       <Header></Header>
       <Switch>
         <Route path="/character/:id">
