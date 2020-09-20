@@ -1,11 +1,11 @@
 ## Description
 
 This simple React app demonstrates the use of:
-Typescript
-Apollo client
-Tailwind css
-Storybook
-React Testing Library
+Typescript<br />
+Apollo client<br />
+Tailwind css<br />
+Storybook<br />
+React Testing Library<br />
 
 ## Available Scripts
 
