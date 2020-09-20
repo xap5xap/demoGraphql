@@ -1,4 +1,11 @@
-This simple React app demonstrates the use of Apollo client, Tailwind css, Storybook and unit testing
+## Description
+
+This simple React app demonstrates the use of:
+Typescript
+Apollo client
+Tailwind css
+Storybook
+React Testing Library
 
 ## Available Scripts
 
