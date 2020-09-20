@@ -1,6 +1,6 @@
 ## Description
 
-This simple React app demonstrates the use of:
+This simple React app demonstrates the use of:<br />
 Typescript<br />
 Apollo client<br />
 Tailwind css<br />
