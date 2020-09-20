@@ -2,10 +2,12 @@ import { useQuery } from "@apollo/client";
 import React from "react";
 import { getCharacters } from "../../apollo/queries";
 import CharacterCard from "../../components/characterCard/CharacterCard";
-import { CharacterData } from "../../types/rickAndMortiTypes";
+import { GetCharactersResponse } from "../../types/rickAndMortiTypes";
 
 const Home = () => {
-  const { loading, error, data } = useQuery<CharacterData>(getCharacters);
+  const { loading, error, data } = useQuery<GetCharactersResponse>(
+    getCharacters
+  );
 
   const renderCharacters = () => {
     return data?.characters.results.map((el, id) => (

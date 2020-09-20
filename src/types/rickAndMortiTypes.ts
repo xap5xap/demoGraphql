@@ -9,8 +9,12 @@ export type Character = {
   created?: string;
 };
 
-export type CharacterData = {
+export type GetCharactersResponse = {
   characters: {
     results: Character[];
   };
+};
+
+export type GetCharacterByIdResponse = {
+  character: Character;
 };
