@@ -8,3 +8,9 @@ export type Character = {
   image: string;
   created?: string;
 };
+
+export type CharacterData = {
+  characters: {
+    results: Character[];
+  };
+};
